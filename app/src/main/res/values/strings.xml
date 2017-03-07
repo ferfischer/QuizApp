@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuizApp sobre o Google</string>
+    <string name="question1">1: Qual o nome do primeiro buscador de Larry Page e Sergey Brin?</string>
+    <string name="question2">2: Quando o buscador foi criado?</string>
+    <string name="question3">3: Em que ano o GMail foi lançado?</string>
+    <string name="question4">4: Quais serviços abaixo pertencem ao Google?</string>
+    <string name="question5">5: Qual o nome da plataforma de vídeos criada pelo Google?</string>
+</resources>
