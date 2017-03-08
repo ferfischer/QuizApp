@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox cbCorrectAnswer4_3 = (CheckBox) findViewById(R.id.q4correctAnswer3);
         CheckBox cbWrongAnswer4 = (CheckBox) findViewById(R.id.q4wrongAnswer);
 
-        if ( cbCorrectAnswer4_1.isChecked() & cbCorrectAnswer4_2.isChecked() & cbCorrectAnswer4_3.isChecked() & !cbWrongAnswer4.isChecked() ) {
+        if ( cbCorrectAnswer4_1.isChecked() && cbCorrectAnswer4_2.isChecked() && cbCorrectAnswer4_3.isChecked() && !cbWrongAnswer4.isChecked() ) {
             numeroAcertos++;
         }
 
@@ -49,7 +49,11 @@ public class MainActivity extends AppCompatActivity {
             numeroAcertos++;
         };
 
-        Toast.makeText(this, "Você acertou "+numeroAcertos+ " respostas!", Toast.LENGTH_SHORT).show();
+        if (numeroAcertos > 0) {
+            Toast.makeText(this, "Você acertou " + numeroAcertos + " respostas!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Você não acertou nenhuma resposta! :(", Toast.LENGTH_SHORT).show();
+        }
         RatingBar rbPontuacao = (RatingBar) findViewById(R.id.ratingBar);
         rbPontuacao.setRating(numeroAcertos);
         rbPontuacao.setVisibility(View.VISIBLE);

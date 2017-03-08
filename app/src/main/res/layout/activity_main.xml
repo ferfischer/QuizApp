@@ -1,174 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView android:id="@+id/scroll"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.fernandofischer.quizapp.MainActivity"
-        android:weightSum="1">
+        android:weightSum="1"
+        tools:context="com.fernandofischer.quizapp.MainActivity">
 
         <TextView
+            android:id="@+id/question1"
             style="@style/QuestionStyle"
-            android:text="@string/question1"
-            android:id="@+id/question1"/>
+            android:text="@string/question1" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <RadioButton
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FrontDoor"
-                style="@style/AnswerStyle"/>
+                android:text="FrontDoor" />
+
             <RadioButton
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Goooogle"
-                style="@style/AnswerStyle"/>
+                android:text="Goooogle" />
+
             <RadioButton
                 android:id="@+id/q1correctAnswer"
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BackRub"
-                style="@style/AnswerStyle"/>
+                android:text="BackRub" />
         </RadioGroup>
 
-
-
         <TextView
+            android:id="@+id/question2"
             style="@style/QuestionStyle"
-            android:text="@string/question2"
-            android:id="@+id/question2"/>
+            android:text="@string/question2" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <RadioButton
                 android:id="@+id/q2correctAnswer"
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1996"
-                style="@style/AnswerStyle"/>
+                android:text="1996" />
+
             <RadioButton
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1998"
-                style="@style/AnswerStyle"/>
+                android:text="1998" />
+
             <RadioButton
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2000"
-                style="@style/AnswerStyle"/>
+                android:text="2000" />
         </RadioGroup>
 
-
         <TextView
+            android:id="@+id/question3"
             style="@style/QuestionStyle"
-            android:text="@string/question3"
-            android:id="@+id/question3"/>
+            android:text="@string/question3" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <RadioButton
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2000"
-                style="@style/AnswerStyle"/>
+                android:text="2000" />
+
             <RadioButton
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2002"
-                style="@style/AnswerStyle"/>
+                android:text="2002" />
+
             <RadioButton
                 android:id="@+id/q3correctAnswer"
+                style="@style/AnswerStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2004"
-                style="@style/AnswerStyle"/>
+                android:text="2004" />
         </RadioGroup>
 
         <TextView
+            android:id="@+id/question4"
             style="@style/QuestionStyle"
-            android:text="@string/question4"
-            android:id="@+id/question4"/>
+            android:text="@string/question4" />
 
         <CheckBox
             android:id="@+id/q4correctAnswer1"
+            style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Play Music"
-            style="@style/AnswerStyle"/>
+            android:text="Play Music" />
 
         <CheckBox
             android:id="@+id/q4correctAnswer2"
+            style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adwords"
-            style="@style/AnswerStyle"/>
+            android:text="Adwords" />
 
         <CheckBox
             android:id="@+id/q4wrongAnswer"
+            style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Twitter"
-            style="@style/AnswerStyle"/>
+            android:text="Twitter" />
 
         <CheckBox
             android:id="@+id/q4correctAnswer3"
+            style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adsense"
-            style="@style/AnswerStyle"/>
+            android:text="Adsense" />
 
         <TextView
+            android:id="@+id/question5"
             style="@style/QuestionStyle"
-            android:text="@string/question5"
-            android:id="@+id/question5"/>
-        
+            android:text="@string/question5" />
+
         <EditText
             android:id="@+id/q5answer"
+            style="@style/AnswerStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
             android:hint="Digite sua resposta"
-            style="@style/AnswerStyle"/>
+            android:inputType="text" />
 
         <RatingBar
-            android:layout_marginTop="20dp"
+            android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ratingBar"
-            android:visibility="invisible"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:isIndicator="true"
-            android:max="5" />
+            android:max="5"
+            android:visibility="invisible" />
 
         <Button
-            android:layout_marginTop="25dp"
-            android:text="Finalizar quiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="finishQuiz" />
-
+            android:layout_marginTop="25dp"
+            android:onClick="finishQuiz"
+            android:text="Finalizar quiz" />
 
     </LinearLayout>
-
-
-
-
 </ScrollView>
