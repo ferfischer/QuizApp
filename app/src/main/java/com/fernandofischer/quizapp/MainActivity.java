@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
             numeroAcertos++;
         }
 
-        CheckBox cbCorrectAnswer4_1 = (CheckBox) findViewById(R.id.q4correctAnswer1);
-        CheckBox cbCorrectAnswer4_2 = (CheckBox) findViewById(R.id.q4correctAnswer2);
-        CheckBox cbCorrectAnswer4_3 = (CheckBox) findViewById(R.id.q4correctAnswer3);
+        CheckBox cbCorrectAnswer4A = (CheckBox) findViewById(R.id.q4correctAnswerA);
+        CheckBox cbCorrectAnswer4B = (CheckBox) findViewById(R.id.q4correctAnswerB);
+        CheckBox cbCorrectAnswer4C = (CheckBox) findViewById(R.id.q4correctAnswerC);
         CheckBox cbWrongAnswer4 = (CheckBox) findViewById(R.id.q4wrongAnswer);
 
-        if ( cbCorrectAnswer4_1.isChecked() && cbCorrectAnswer4_2.isChecked() && cbCorrectAnswer4_3.isChecked() && !cbWrongAnswer4.isChecked() ) {
+        if ( cbCorrectAnswer4A.isChecked() && cbCorrectAnswer4B.isChecked() && cbCorrectAnswer4C.isChecked() && !cbWrongAnswer4.isChecked() ) {
             numeroAcertos++;
         }
 

@@ -114,14 +114,14 @@
             android:text="@string/question4" />
 
         <CheckBox
-            android:id="@+id/q4correctAnswer1"
+            android:id="@+id/q4correctAnswerA"
             style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Play Music" />
 
         <CheckBox
-            android:id="@+id/q4correctAnswer2"
+            android:id="@+id/q4correctAnswerB"
             style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
             android:text="Twitter" />
 
         <CheckBox
-            android:id="@+id/q4correctAnswer3"
+            android:id="@+id/q4correctAnswerC"
             style="@style/AnswerStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
